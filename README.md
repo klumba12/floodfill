@@ -1,8 +1,8 @@
 # Solution
 
-Was tested under Visual Studio 2017
+Was tested under Visual Studio 2017.
 
-Originally solution was build under Visual Studio Code(VSC)
+Originally solution was build under Visual Studio Code(VSC).
 To run tests in VSC you need to do next steps:
 * open source code folder
 * open terminal `ctrl+~`
