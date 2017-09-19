@@ -1,3 +1,14 @@
+# Solution
+
+Was tested under Visual Studio 2017
+
+Originally solution was build under Visual Studio Code(VSC)
+To run tests in VSC you need to do next steps:
+* open source code folder
+* open terminal `ctrl+~`
+* $ `dotnet restore`
+* $ `dotnet test ./FloodFill.Test/FloodFill.Test.csproj`
+
 # Flood Filling
 
 This dojo was derived from a post in reddit.com/r/dailyprogrammer here: http://www.reddit.com/r/dailyprogrammer/comments/2ug3hx/20150202_challenge_200_easy_floodfill/
