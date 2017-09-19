@@ -1,7 +1,3 @@
-using System;
-using System.Linq;
-using System.Text;
-
 namespace FloodFill {
     // 
     // Set of known colors

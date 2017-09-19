@@ -1,7 +1,3 @@
-using System;
-using System.Linq;
-using System.Text;
-
 namespace FloodFill {
     // 
     // Encapsulates all of the state about drawing into a bitmap

@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using System.Text;
-using FloodFill;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FloodFill.Test {

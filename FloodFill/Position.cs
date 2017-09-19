@@ -1,5 +1,3 @@
-using System;
-
 namespace FloodFill {
     public struct Position {
         public readonly uint X;
