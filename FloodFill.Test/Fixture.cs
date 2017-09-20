@@ -12,7 +12,7 @@ namespace FloodFill.Test {
                     throw new FileNotFoundException (
                         @"Ensure that path is correct. 
                          If 'dotnet test' service is used,
-                         be aware that case of project name is case sensitive", 
+                         be aware that case of project name is sensitive", 
                         path);
                 }
 
