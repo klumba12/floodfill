@@ -1,11 +1,10 @@
 using System;
-using System.IO;
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace FloodFill.Test {
+namespace FloodFill.Test.Units {
     [TestClass]
-    public class Test {
+    public class Surface {
         [TestMethod]
         public void Should_Fill_Correct_Case_1 () {
             RunCase (1, '@', new Position (8, 12));
@@ -27,13 +26,13 @@ namespace FloodFill.Test {
         }
 
         private static void RunCase (int no, char color, Position pos) {
-            var input = File.ReadAllText ($"../../../Resources/Case{no}-Input.txt");
-            var output = File.ReadAllText ($"../../../Resources/Case{no}-Output.txt");
+            var input = Fixture.Resource ($"Case{no}-Input.txt");
+            var output = Fixture.Resource ($"Case{no}-Output.txt");
 
             var bitmap = new BitmapReader ().Read (input);
 
             var canvas = new Canvas (bitmap);
-            var surface = new Surface (canvas);
+            var surface = new FloodFill.Surface (canvas);
             surface.Fill (pos, color);
 
             var result = new StringBuilder ();

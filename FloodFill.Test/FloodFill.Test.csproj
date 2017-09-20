@@ -5,6 +5,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Case1-Input.txt" />
+    <None Remove="Resources\Case1-Output.txt" />
+    <None Remove="Resources\Case2-Input.txt" />
+    <None Remove="Resources\Case2-Output.txt" />
+    <None Remove="Resources\Case3-Input.txt" />
+    <None Remove="Resources\Case3-Output.txt" />
+    <None Remove="Resources\Case4-Input.txt" />
+    <None Remove="Resources\Case4-Output.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Case1-Input.txt" />
+    <EmbeddedResource Include="Resources\Case1-Output.txt" />
+    <EmbeddedResource Include="Resources\Case2-Input.txt" />
+    <EmbeddedResource Include="Resources\Case2-Output.txt" />
+    <EmbeddedResource Include="Resources\Case3-Input.txt" />
+    <EmbeddedResource Include="Resources\Case3-Output.txt" />
+    <EmbeddedResource Include="Resources\Case4-Input.txt" />
+    <EmbeddedResource Include="Resources\Case4-Output.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="1.1.11" />
     <PackageReference Include="MSTest.TestFramework" Version="1.1.11" />
