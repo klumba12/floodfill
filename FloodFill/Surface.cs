@@ -37,8 +37,8 @@ namespace FloodFill {
                 closed.Add (p);
                 canvas[p] = color;
 
-                foreach (var y in successor (p)) {
-                    open.Enqueue (y);
+                foreach (var s in successor (p)) {
+                    open.Enqueue (s);
                 }
             }
         }
