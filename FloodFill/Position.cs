@@ -9,7 +9,7 @@ namespace FloodFill {
         }
         
         public override string ToString () {
-            return $"[x: {X}, y: {Y}]";
+            return $"[{X}, {Y}]";
         }
     }
 }
