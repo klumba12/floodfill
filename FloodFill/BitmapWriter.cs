@@ -7,7 +7,6 @@ namespace FloodFill {
     // Write bitmap to text stream
     //
     public sealed class BitmapWriter {
-        private readonly string delimiter = Environment.NewLine;
         private readonly Bitmap bitmap;
 
         public BitmapWriter (Bitmap bitmap) {
