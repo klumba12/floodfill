@@ -1,9 +1,9 @@
 # Solution
 
-Was tested under Visual Studio 2017.
+Was tested under Visual Studio 2017, .netcore2.
 
 Originally solution was build under Visual Studio Code(VSC).
-To run tests in VSC you need to do next steps:
+To run tests in VSC you need next steps:
 * open source code folder
 * open terminal `ctrl+~`
 * $ `dotnet restore`

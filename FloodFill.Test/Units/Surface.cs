@@ -30,7 +30,6 @@ namespace FloodFill.Test.Units {
             var output = Fixture.Resource ($"Case{no}-Output.txt");
 
             var bitmap = new BitmapReader ().Read (input);
-
             var canvas = new Canvas (bitmap);
             var surface = new FloodFill.Surface (canvas);
             surface.Fill (pos, color);

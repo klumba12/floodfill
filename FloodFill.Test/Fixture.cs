@@ -1,11 +1,21 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Reflection;
 
 namespace FloodFill.Test {
     public static class Fixture {
         public static string Resource (string name) {
             var asm = typeof (Fixture).GetTypeInfo ().Assembly;
-            using (var stream = asm.GetManifestResourceStream ($"FloodFill.Test.Resources.{name}")) {
+            var path = $"FloodFill.Test.Resources.{name}";
+            using (var stream = asm.GetManifestResourceStream (path)) {
+                if (stream == null) {
+                    throw new FileNotFoundException (
+                        @"Ensure that path is correct. 
+                         If 'dotnet test' service is used,
+                         be aware that case of project name is case sensitive", 
+                        path);
+                }
+
                 using (var reader = new StreamReader (stream)) {
                     return reader.ReadToEnd ();
                 }
