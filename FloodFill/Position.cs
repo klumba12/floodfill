@@ -1,4 +1,7 @@
 namespace FloodFill {
+    //
+    // A position has an x, y coordinates
+    //
     public struct Position {
         public readonly uint X;
         public readonly uint Y;
