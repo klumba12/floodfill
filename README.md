@@ -1,6 +1,6 @@
 # Solution
 
-Was tested under Visual Studio 2017, .netcore2.
+Was tested under Visual Studio 2017(netcore1.0).
 
 Originally solution was build under Visual Studio Code(VSC).
 To run tests in VSC you need next steps:
