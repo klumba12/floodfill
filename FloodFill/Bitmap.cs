@@ -16,11 +16,11 @@ namespace FloodFill {
         }
 
         public int Height {
-            get => this.pixels.GetLength (1);
+            get => pixels.GetLength (1);
         }
 
         public int Width {
-            get => this.pixels.GetLength (0);
+            get => pixels.GetLength (0);
         }
 
         // Emulates raw work with pixels
