@@ -24,8 +24,8 @@ namespace FloodFill.Test {
 
         // Line ending agnostic assert
         public static void AreEqual(string expected, string actual) {
-            expected = expected.Replace("\r\n", "\n");
-            actual = actual.Replace("\r\n", "\n");
+            expected = expected?.Replace("\r\n", "\n");
+            actual = actual?.Replace("\r\n", "\n");
 
             Assert.AreEqual(expected, actual);
         }
