@@ -41,7 +41,7 @@ namespace FloodFill.Test.Units {
             var expected = $"{newLine}{output}{newLine}";
             var actual = $"{newLine}{result.ToString()}{newLine}";
 
-            Assert.AreEqual (expected, actual);
+            Fixture.AreEqual(expected, actual);
         }
     }
 }

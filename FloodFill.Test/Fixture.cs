@@ -1,6 +1,6 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Reflection;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FloodFill.Test {
     public static class Fixture {
@@ -20,6 +20,14 @@ namespace FloodFill.Test {
                     return reader.ReadToEnd ();
                 }
             }
+        }
+
+        // Line ending agnostic assert
+        public static void AreEqual(string expected, string actual) {
+            expected = expected.Replace("\r\n", "\n");
+            actual = actual.Replace("\r\n", "\n");
+
+            Assert.AreEqual(expected, actual);
         }
     }
 }
