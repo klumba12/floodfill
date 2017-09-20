@@ -58,13 +58,13 @@ namespace FloodFill {
         }
 
         private Func<Position, IEnumerable<Position>> SuccessorFactory (Predicate<Position> canWalk) {
-            return p => {
+            return pos => {
                 var result = new List<Position> ();
 
-                var w = new Position (p.X - 1, p.Y);
-                var e = new Position (p.X + 1, p.Y);
-                var n = new Position (p.X, p.Y - 1);
-                var s = new Position (p.X, p.Y + 1);
+                var w = new Position (pos.X - 1, pos.Y);
+                var e = new Position (pos.X + 1, pos.Y);
+                var n = new Position (pos.X, pos.Y - 1);
+                var s = new Position (pos.X, pos.Y + 1);
 
                 if (canWalk (w)) {
                     result.Add (w);
