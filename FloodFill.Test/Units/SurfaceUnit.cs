@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FloodFill.Test.Units {
     [TestClass]
-    public class Surface {
+    public class SurfaceUnit {
         [TestMethod]
         public void Should_Fill_Correct_Case_1 () {
             RunCase (1, '@', new Position (8, 12));
@@ -31,7 +31,7 @@ namespace FloodFill.Test.Units {
 
             var bitmap = new BitmapReader ().Read (input);
             var canvas = new Canvas (bitmap);
-            var surface = new FloodFill.Surface (canvas);
+            var surface = new Surface (canvas);
             surface.Fill (pos, color);
 
             var result = new StringBuilder ();
